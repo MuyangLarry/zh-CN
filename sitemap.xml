@@ -65,7 +65,7 @@
   </url>
   
   <url>
-    <loc>https://muyanglarry.github.io/2022/04/23/README/</loc>
+    <loc>https://muyanglarry.github.io/2022/05/02/README/</loc>
     
     <lastmod>2022-05-01</lastmod>
     
@@ -142,13 +142,6 @@
   </url>
   
   <url>
-    <loc>https://muyanglarry.github.io/tags/%E7%A1%AC%E4%BB%B6%E6%B5%8B%E8%AF%84/</loc>
-    <lastmod>2022-05-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://muyanglarry.github.io/tags/%E6%AC%A2%E8%BF%8E/</loc>
     <lastmod>2022-05-02</lastmod>
     <changefreq>weekly</changefreq>
@@ -157,6 +150,13 @@
   
   <url>
     <loc>https://muyanglarry.github.io/tags/%E9%9A%8F%E8%AE%B0/</loc>
+    <lastmod>2022-05-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://muyanglarry.github.io/tags/%E7%A1%AC%E4%BB%B6%E6%B5%8B%E8%AF%84/</loc>
     <lastmod>2022-05-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -179,14 +179,14 @@
   </url>
   
   <url>
-    <loc>https://muyanglarry.github.io/categories/%E6%95%B0%E7%A0%81/</loc>
+    <loc>https://muyanglarry.github.io/categories/%E5%85%B6%E4%BB%96/</loc>
     <lastmod>2022-05-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://muyanglarry.github.io/categories/%E5%85%B6%E4%BB%96/</loc>
+    <loc>https://muyanglarry.github.io/categories/%E6%95%B0%E7%A0%81/</loc>
     <lastmod>2022-05-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
