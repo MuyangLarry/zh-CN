@@ -23,6 +23,69 @@
       </tags>
   </entry>
   <entry>
+    <title>任务计划程序：解放双手，提升效率的利器</title>
+    <url>/zh-CN/2025/01/21/TaskScheduler/</url>
+    <content><![CDATA[<h1 id="任务计划程序"><a href="#任务计划程序" class="headerlink" title="任务计划程序"></a>任务计划程序</h1><h2 id="1-介绍"><a href="#1-介绍" class="headerlink" title="1.介绍"></a>1.介绍</h2><p>任务计划程序是一种操作系统级别的工具，允许用户创建和安排自动化任务的执行。这些任务可以是一系列的操作，例如运行程序、脚本或命令，以及执行系统维护、数据备份、更新等操作。任务计划程序能够根据预定的时间表或特定的事件来触发这些任务，从而无需用户干预即可在后台自动执行。用户可以设置任务的执行时间、频率和条件，也可以指定任务执行时所需的权限和环境。</p>
+<h2 id="2-位置"><a href="#2-位置" class="headerlink" title="2.位置"></a>2.位置</h2><p>快捷方式:开始菜单-&gt;Windows管理工具-&gt;任务计划程序<br>程序位置:<code>&quot;C:\Windows\system32\taskschd.msc&quot;</code></p>
+<h2 id="3-使用"><a href="#3-使用" class="headerlink" title="3.使用"></a>3.使用</h2><p>打开任务计划程序,在中间可以看到概述，任务状态和活动任务，左侧是本地任务库,双击可以展开成树列表,右侧是操作菜单,可以对任务计划进行操作.</p>
+<p><img src="https://pic1.imgdb.cn/item/678b9c41d0e0a243d4f57a05.png" alt="首页"></p>
+<p>在左侧树列表选择创建任务的位置(默认丢根目录),在右侧选择创建任务(如下)</p>
+<p><img src="https://pic1.imgdb.cn/item/678b9ec5d0e0a243d4f57a54.png" alt="创建任务"></p>
+<h3 id="3-1常规"><a href="#3-1常规" class="headerlink" title="3.1常规:"></a>3.1常规:</h3><p>包括了任务的基本信息</p>
+<table>
+<thead>
+<tr>
+<th>名字</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>名称</td>
+<td>显示在任务计划程序里的名称(用于区分不同任务)</td>
+</tr>
+<tr>
+<td>位置</td>
+<td>任务存储在任务计划程序的位置(如图存储在根位置)</td>
+</tr>
+<tr>
+<td>创建者</td>
+<td>创建任务的用户或组</td>
+</tr>
+<tr>
+<td>描述</td>
+<td>对任务的描述</td>
+</tr>
+</tbody></table>
+<p>安全选项可以设置运行任务使用的用户账户<br>是否使用最高权限运行<br>以及是否隐藏任务和用什么配置运行任务</p>
+<h3 id="3-2触发器"><a href="#3-2触发器" class="headerlink" title="3.2触发器:"></a>3.2触发器:</h3><p>可以设置任务在什么条件下运行</p>
+<p><img src="https://pic1.imgdb.cn/item/678ba341d0e0a243d4f57abc.png" alt="触发器"></p>
+<p>按预定计划下,可以按不同的预定时间自动执行</p>
+<p><img src="https://pic1.imgdb.cn/item/678ba9a6d0e0a243d4f57bf6.png" alt="开始任务"></p>
+<h3 id="3-3操作"><a href="#3-3操作" class="headerlink" title="3.3操作"></a>3.3操作</h3><p>在”程序与脚本”处,输入要使用的应用程序的绝对地址,若有启动参数(如java类的程序)可以跟在绝对地址后面,也可以添加在下方的”添加参数”,如果需要输出日志或者调用到了”.dll”文件,可以将文件夹地址填写在”起始于”处.</p>
+<p><img src="https://pic1.imgdb.cn/item/678bad6ad0e0a243d4f57c68.png" alt="操作"></p>
+<h3 id="3-4条件"><a href="#3-4条件" class="headerlink" title="3.4条件"></a>3.4条件</h3><p>如果勾选”唤醒计算机运行此任务”,则任务计划程序会在睡眠状态下唤醒计算机(是睡眠不是休眠,如果开了混合睡眠有概率失效),当用户设置了开机密码时,需勾选常规-安全选项下的”不管用户是否登录都要运行”</p>
+<p><img src="https://pic1.imgdb.cn/item/678f0a3ed0e0a243d4f60a58.png" alt="条件"></p>
+<h3 id="3-5设置"><a href="#3-5设置" class="headerlink" title="3.5设置"></a>3.5设置</h3><p>允许按需运行任务:允许在任务计划程序手动运行任务</p>
+<p>如果过了计划开始时间,立即启动任务:逾期执行,配合设置在每天00:00时的触发器,可以做到每天第一次开计算机执行一次的效果</p>
+<p>如果任务失败,按以下频率重新启动:任务失败时,每多长时间重试</p>
+<p>尝试启动的最大次数:在设置了上面的条目后,自动重试的最大次数</p>
+<p>如果任务运行时间超过以下时间,停止任务:任务单次运行时间超过设定值时停止任务</p>
+<p>如果请求后任务还在运行,强行将其停止:在上面设置了时间后或手动运行手动停止时,若无法停止任务则直接杀掉任务进程(会丢数据)</p>
+<p>如果任务没有计划再次运行,则在次之后删除该任务:如果任务没有再次执行的计划,则在设定时间后删除任务</p>
+<p>如果此任务已经运行,以下规则适用:在检测到上次任务的程序还没退出,新的任务已经开始时,做的操作</p>
+<p><img src="https://pic1.imgdb.cn/item/678f0e0bd0e0a243d4f60b5f.png" alt="设置"></p>
+<h3 id="3-5历史记录"><a href="#3-5历史记录" class="headerlink" title="3.5历史记录"></a>3.5历史记录</h3><p>默认没开,开启后会记录任务的执行情况,通常调试时用</p>
+<p><img src="https://pic1.imgdb.cn/item/678f122cd0e0a243d4f60c35.png" alt="历史记录"></p>
+<h2 id="4结尾"><a href="#4结尾" class="headerlink" title="4结尾"></a>4结尾</h2><p>任务计划程序是Windows自带的按时执行程序的程序,使用好它,能给我们带来许多便利.</p>
+]]></content>
+      <categories>
+        <category>软件</category>
+      </categories>
+      <tags>
+        <tag>Windows</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>如何实现中考目标，从心理学角度讲有3个要素</title>
     <url>/zh-CN/2022/06/05/%E4%B8%AD%E8%80%83/</url>
     <content><![CDATA[<p>中考和高考使用的2B型号填涂型铅笔<br>中考所用的2B铅笔、0.5mm黑色墨水签字笔、橡皮、垫板、圆规、尺子以及准考证等，都应归纳在一起，在前一天晚上就准备好，放入一个透明的塑料袋或文件袋中。涂答题卡的2B铅笔要提前削好（如果是自动笔，要防止买到假冒产品）。</p>
@@ -71,8 +134,8 @@
         <category>数码</category>
       </categories>
       <tags>
-        <tag>随记</tag>
         <tag>软件测评</tag>
+        <tag>随记</tag>
         <tag>Windows</tag>
       </tags>
   </entry>
@@ -138,8 +201,8 @@
         <category>软件</category>
       </categories>
       <tags>
-        <tag>软件测评</tag>
         <tag>频道视频原稿</tag>
+        <tag>软件测评</tag>
         <tag>硬核科普</tag>
       </tags>
   </entry>
@@ -189,8 +252,8 @@
         <category>软件</category>
       </categories>
       <tags>
-        <tag>软件测评</tag>
         <tag>频道视频原稿</tag>
+        <tag>软件测评</tag>
       </tags>
   </entry>
 </search>
